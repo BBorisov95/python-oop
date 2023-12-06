@@ -14,7 +14,7 @@ class Delicacy(ABC):
 
     @name.setter
     def name(self, value):
-        if not value.strip():
+        if value.strip() == '':
             raise ValueError('Name cannot be null or whitespace!')
         self.__name = value
 
@@ -24,7 +24,7 @@ class Delicacy(ABC):
 
     @price.setter
     def price(self, value):
-        if value <= 0:
+        if value <= 0.0:
             raise ValueError('Price cannot be less or equal to zero!')
         self.__price = value
 
