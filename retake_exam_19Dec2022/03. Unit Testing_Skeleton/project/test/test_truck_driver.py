@@ -66,5 +66,5 @@ class TestTruckDriver(TestCase):
         result = self.driver.__repr__()
         self.assertEqual(result, 'Test has 0 miles behind his back.')
 
-if __name__ == "__main__":
++\
     main()
